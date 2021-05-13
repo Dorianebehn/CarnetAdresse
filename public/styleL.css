@@ -1,0 +1,529 @@
+.ParcellInfo{
+    color:  #3c97bf;;
+}
+.TestBorder{
+    border: 2px solid red;
+}
+.TestBorderGreen{
+    border: 2px solid darkgreen;
+}
+.ListAdresse{
+overflow: hidden;
+margin-top:-12%;
+width: 100%;
+height: 330px;
+background: #f2f2f2;
+padding: 10px;
+overflow: scroll;
+margin-bottom: 20px;
+}
+.contener{
+    width: 100vw;
+    margin: 0px;
+    padding: 10px;
+
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.LeftContener{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+   padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+   
+}
+
+.RightContener{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+}
+.LeftContener input{
+    color:   #3c97bf;
+}
+.RightContener input{
+    color:   #3c97bf;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 2px;
+
+}
+select{
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+.DeliveryPlaceInput{
+    width: 79%;
+}
+
+.button:active {
+    transform: scale(0.95);
+    background-color:  #3c97bf;
+    transition: background-color 300ms;
+}
+
+.button {
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px solid #333333;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    margin: 13vh 70%;
+    margin-right: 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+
+}
+
+.DisplayInfo{
+    margin-left: 3rem;
+    font-size: 1rem;
+    display: none;
+    transition:display 3s ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+}
+/**
+*pour les petits ecrans , le formulaire doit
+*occuper toute la ligne
+ */
+@media screen and (min-width: 10px) {
+.contener{
+        
+width:100vw;
+
+    }
+    .ParcellInfo{
+        color:  #3c97bf;;
+    }
+    .LeftContener{
+        width: 100%;
+    }
+    .RightContener{
+        width: 100%;
+        height:420px;;
+        background-color: white;
+    }
+    .InlineBlockClass{
+        display: block;
+    }
+    input{
+        width: 79%;
+    }
+    .NormalInput{
+        width: 78%;
+    }
+}
+/**
+*pour les ecran d une taille a partir de 600px
+*le formulaire est divise en deux colones egales
+ */
+@media screen and (min-width: 600px) {
+
+    .contener{
+        
+        width:100vw;
+padding-left:10vw;
+padding-right:10vw;
+    }
+    .LeftContener{
+        width: 40%;
+        float: left;
+        border-radius: 10px;
+
+
+    }
+    .RightContener{
+        width: 40%;
+        float: left;
+
+        border-radius: 10px;
+
+        background: #FF416C;
+        background: -webkit-linear-gradient(to right, #FF4B2B, rgb(255,121 ,32));
+        background: linear-gradient(to left, #FF4B2B, rgb(255,121 ,32));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+    .InlineBlockClass{
+        display: inline;
+    }
+    input{
+        width: 10vw;
+    }
+    .GpsInput{
+        width: 10vw;
+        display: inline;
+    }
+    .ParcellDescriptionInput{
+        width: 5%;
+        margin-right: 20px;
+    }
+    .PhoneNumber{
+        float: right;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+.Altitude, .Longitude, .Latitude{
+    width: 32%;
+    float: left;
+}
+
+.DeliveryPlaceInput{
+    width: 93%;
+}
+.NormalInput{
+    width: 100%;
+}
+
+
+/****************************
+modal style
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 8px;
+}
+.TestBorder{
+    border: 2px solid red;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+.ghost {
+			
+    margin-left:0px;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(255,121 ,32);
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    background-color: rgb(255,121 ,32);
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align: center;
+
+}
+.ModalButton{
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+background-color:#3c97bf;
+color:white;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 100px; opacity: 1}
+}
+
+/******      ********************/
+
+
+/****************************
+modal style
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 8px;
+}
+.TestBorder{
+    border: 2px solid red;
+}
+/* Modal Content/Box */
+.modal-content-Map {
+    background-color: #fefefe;
+    margin: auto auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header-Map {
+    padding: 2px 16px;
+    background-color: rgb(255,121 ,32);
+    color: white;
+}
+
+
+
+
+/* Modal Content */
+.modal-content-Map {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Templates Messages */
+
+#container {
+visibility: hidden;
+float:right;
+margin-top:-200px;
+}
+
+#loader {
+color: #008cff;
+height: 40px;
+left: 45%;
+position: absolute;
+top: 45%;
+width: 30%;
+}
+
+@font-face {
+font-family: 'e-db-icons';
+src:
+url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0jSRoAAAEoAAAAVmNtYXDnFudgAAABkAAAADpnbHlmSrKTCAAAAdgAAAC4aGVhZBKtK8cAAADQAAAANmhoZWEHmQNtAAAArAAAACRobXR4D7gAAAAAAYAAAAAQbG9jYQB4ADoAAAHMAAAACm1heHABEAAYAAABCAAAACBuYW1lH00mDAAAApAAAAJJcG9zdIwkSr0AAATcAAAATQABAAADUv9qAFoEAAAA//4D6gABAAAAAAAAAAAAAAAAAAAABAABAAAAAQAAGc/PS18PPPUACwPoAAAAANfSc3wAAAAA19JzfAAAAAAD6gPqAAAACAACAAAAAAAAAAEAAAAEAAwAAgAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQPuAZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wPnBQNS/2oAWgPqAJYAAAABAAAAAAAABAAAAAPoAAAD6AAAA+gAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQAJgAAAAQABAABAADnBf//AADnA///AAAAAQAEAAAAAQACAAMAAAAAAAAAHAA6AFwAAAACAAAAAAPqA2UABgAKAAA3IREjCQEjBRcBIQID6AL+Dv4NAQEY3QG4/I+IAsL+GAHonroBcwAAAAIAAAAAA8YD6gAFAAoAADchESMJASUHCQImA6AD/jL+MQEEywGWAZb+agICX/4+AcLXsv6cAWQBZAAAAAEAAAAAA+oD6gALAAATCQEXCQE3CQEnCQECATP+zcIBMgEzwf7OATLB/s3+zgMp/s3+zsIBM/7NwgEyATPB/s4BMgAAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAKAAEAAQAAAAAAAgAHAAsAAQAAAAAAAwAKABIAAQAAAAAABAAKABwAAQAAAAAABQALACYAAQAAAAAABgAKADEAAQAAAAAACgAsADsAAQAAAAAACwASAGcAAwABBAkAAAACAHkAAwABBAkAAQAUAHsAAwABBAkAAgAOAI8AAwABBAkAAwAUAJ0AAwABBAkABAAUALEAAwABBAkABQAWAMUAAwABBAkABgAUANsAAwABBAkACgBYAO8AAwABBAkACwAkAUcgZS1kYi1pY29uc1JlZ3VsYXJlLWRiLWljb25zZS1kYi1pY29uc1ZlcnNpb24gMS4wZS1kYi1pY29uc0ZvbnQgZ2VuZXJhdGVkIHVzaW5nIFN5bmNmdXNpb24gTWV0cm8gU3R1ZGlvd3d3LnN5bmNmdXNpb24uY29tACAAZQAtAGQAYgAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAGUALQBkAGIALQBpAGMAbwBuAHMAZQAtAGQAYgAtAGkAYwBvAG4AcwBWAGUAcgBzAGkAbwBuACAAMQAuADAAZQAtAGQAYgAtAGkAYwBvAG4AcwBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAQIBAwEEAQUADG1lc3NhZ2UtbWFpbAtyZWFkLXVucmVhZAZkZWxldGUAAAAAAA==) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.ddb-icons {
+font-family: 'e-db-icons' !important;
+
+font-size: 55px;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.e-folder::before {
+content: 'e703';
+}
+/****************************
+Concernant les textes dans la chatroom
+*/
+
+
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+ 
+  }
+  .nom{
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0%;
+  }
+  .email{
+    margin: 0%;
+      font-size: large;
+      font-family:fantasy;
+       font-weight:100;
+  }
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+      font-size:11px;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+    font-size:9px;
+      margin-top:-16px;
+  }
+  
+  /* Style time text */
+  .time-left {
+    font-size:9px;
+    float: left;
+    color: #999;
+      margin-top:-16px;
+  }
+  .message{
+      font-size:9px;
+      margin-top:-20px;
+      padding:0px;
+  }
